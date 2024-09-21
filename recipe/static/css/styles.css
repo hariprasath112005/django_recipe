@@ -156,7 +156,10 @@ table {
 }
 .recipe-item img {
   width: 100%;
-  height: auto;
+  max-width: 500px; /* Set max width */
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Make sure the image covers the entire area */
+  border-radius: 5px;
 }
 
 /*
@@ -202,7 +205,7 @@ table {
     6px 6px 8px 17px #555;
 }
 .recipe-info .row {
-  margin-top: 12px;
+  margin-top: 12  px;
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #f9f9f9;
@@ -332,4 +335,46 @@ footer {
 .footer-author a {
   color: #f9f9f9;
   font-weight: bold;
+}
+#logo {
+  position: relative;
+  padding: 20px;
+}
+
+#logo .container {
+  position: relative;
+}
+
+#logo .auth-buttons {
+  position: absolute;
+  top: 10px; /* Adjust the vertical position of the buttons */
+  right: 20px; /* Adjust the horizontal position of the buttons */
+}
+
+#logo .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #f47c3c; /* Adjust button background */
+  margin-left: 10px; /* Spacing between buttons */
+  transition: background-color 0.3s ease;
+}
+
+#logo .btn:hover {
+  background-color: #d96422; /* Darken on hover */
+}
+
+#logo .btn-login {
+  background-color: #ffffff; /* Different color for login */
+}
+#logo .btn-signup {
+  background-color: #ffffff; /* Different color for login */
+}
+
+#logo .btn-login:hover {
+  background-color: #6693f3;
+}
+#logo .btn-signup:hover {
+  background-color: #6693f3;
 }

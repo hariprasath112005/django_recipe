@@ -31,4 +31,5 @@ urlpatterns = [
     path('kara_kolambu/', views.kara_kolambu, name="kara_kolambu"),
     path('meen_kolambu/', views.meen_kolambu, name="meen_kolambu"),
     path('login/', views.login_page, name="login"),
+    path('register/', views.register, name="register"),
 ]

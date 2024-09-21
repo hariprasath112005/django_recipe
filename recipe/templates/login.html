@@ -26,9 +26,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png'%}" />
   <link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/favicon/favicon-96x96.png'%}" />
 
-  <link rel="stylesheet" href="{%static 'css/main.css' %}" />
-  <noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
-
+  
 
   <!-- CSS files
   ============== -->
@@ -54,7 +52,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centers the text inside the form */
+    text-align: center;
+     /* Centers the text inside the form */
 }
 
 /* Center the input fields and button within the specific form */
@@ -96,6 +95,10 @@
       <img src="{% static 'images/logo-white.svg'%}" alt="logo" />
       <br />
       <h1>Recipe Book</h1>
+      <div class="auth-buttons">
+        
+        <a href="{% url 'register' %}" class="btn btn-signup">Sign Up</a>
+      </div>
     </div>
   </section>
 
